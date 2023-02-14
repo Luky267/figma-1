@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+    font-family: lato;
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(203, 195, 179);
+
+}
+
+.head-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    height: 120px;
+    margin-left: 170px;
+}
+
+.logo-wrap {
+    flex-grow: 4;
+}
+
+.item-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+body {
+    margin: 0;
+    height: auto;
+    background-color: rgb(255, 250, 240);
+}
+
+.item1,
+.item2,
+.item3 {
+    transition-duration: 0.5s;
+    font-weight: 1000;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 50%;    
+}
+
+.item3, .active{
+    background-color: rgb(165, 159, 146);
+    text-decoration: none;
+    color: black;
+}
+
+.item2 :visited{
+    color: black;
+}
+
+.item1 :visited{
+    color: black;
+}
+
+.item1:hover {
+    background-color: rgb(165, 159, 146);
+    cursor: pointer;
+}
+
+.item2:hover {
+    background-color: rgb(165, 159, 146);
+    cursor: pointer;
+}
+
+.item3:hover {
+    background-color: rgb(165, 159, 146);
+    cursor: pointer;
+
+}
+
+.nadpis{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.kontakt-udaje input, textarea{
+    font-weight: 500;
+    resize: none;
+    border: none;
+    background-color: rgb(209, 207, 203);
+    padding: 10px;
+}
+
+.kontakt-udaje{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 260px 260px;
+    grid-template-rows: 40px 40px 40px 40px;
+    gap: 10px;
+}
+
+.kontakt-udaje textarea{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.burger-wrap{
+    display: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 450;
+    background-color: rgb(203, 195, 179);
+    height: 150px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.button3{
+    background-color: rgb(145, 145, 145);
+    padding: 10px;
+    margin: auto;
+    margin-top: 25px;
+    transition: 0.5s;
+    width: 100px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.38);
+}
+
+.button3:hover{
+    background-color: rgb(110, 110, 110);   
+    cursor: pointer;    
+}
+
+@media only screen and (max-width: 768px){
+    .kontakt-udaje{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 80%;
+        gap: 10px;
+    }
+    
+    .kontakt-udaje textarea{
+        grid-row-start: auto;
+        grid-row-end: auto;
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    .burger {
+        height: 40px;
+        margin-right: 5vw;
+    }
+
+    .item-wrap{
+        margin-right: 0;
+    }
+    
+    .burger-wrap {
+        display: flex;
+        right: 0;
+    }
+
+    .item1{
+        display: none;
+    }
+    .item2{
+        display: none;
+    }
+    .item3{
+        display: none;
+    }
+
+    .logo{
+        margin-left: 5vw;
+    }
+
+    .footer{
+        height: 90px;
+    }
+}
